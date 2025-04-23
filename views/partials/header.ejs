@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Exchange Platform</title>
+    <link href="/css/tailwind.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="bg-sky-50 min-h-screen">
+    <header class="bg-indigo-200 shadow-md">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div>
+                <a href="/" class="text-2xl font-bold text-gray-900 font-gothic drop-shadow-2xl">Book
+                    Exchange Platform</a>
+            </div>
+            <div>
+                <% if (typeof user !=='undefined' ) { %>
+                    <div class=" flex items-center space-x-4">
+                        <span class="text-gray-600">Welcome, <%= user.first_name %></span>
+                        <% if (user.is_admin) { %>
+                            <a href="/admin/dashboard" class="text-blue-600 hover:text-blue-800">Dashboard</a>
+                            <% } %>
+                                <a href="/logout" class="btn btn-secondary">Logout</a>
+                    </div>
+                    <% } else { %>
+                        <div class="space-x-2">
+                            <a href="/login" class="btn btn-primary">Login</a>
+                            <a href="/register" class="btn btn-secondary">Register</a>
+                        </div>
+                        <% } %>
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto px-6 py-8">
+
+
+</body>
+
+</html>

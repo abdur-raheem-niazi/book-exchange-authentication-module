@@ -1,0 +1,12 @@
+# Dependencies
+/node_modules
+
+# Environment variables
+.env
+
+# Generated Tailwind CSS
+/public/css/tailwind.css
+
+# Uploaded files
+/public/uploads/*
+!/public/uploads/.gitkeep

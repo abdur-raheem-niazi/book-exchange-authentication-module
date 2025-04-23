@@ -1,0 +1,38 @@
+{
+  "name": "book-exchange-platform",
+  "version": "1.0.0",
+  "description": "Online Book Exchange Platform",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "build:css": "npx tailwindcss -i ./public/css/style.css -o ./public/css/tailwind.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "book",
+    "exchange",
+    "platform"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^9.0.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.2.0",
+    "nodemailer": "^6.9.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "nodemon": "^2.0.22",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^10.1.0",
+    "tailwindcss": "^3.4.17"
+  }
+}

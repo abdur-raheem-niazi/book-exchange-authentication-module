@@ -1,0 +1,52 @@
+<%- include('partials/header') %>
+
+    <div class="flex flex-col items-center justify-center py-12">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">Welcome to Book Exchange Platform</h1>
+            <p class="text-xl text-gray-600">Share your books with others and discover new reads</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="text-xl font-semibold ">Share Books</h2>
+                </div>
+                <div class="card-body">
+                    <p class="mb-4">Share your books with other users and help spread knowledge.</p>
+                    <div class="flex justify-center">
+                        <i class="fas fa-book text-5xl text-blue-500"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="text-xl font-semibold">Discover Books</h2>
+                </div>
+                <div class="card-body">
+                    <p class="mb-4">Find new and interesting books from other users.</p>
+                    <div class="flex justify-center">
+                        <i class="fas fa-search text-5xl text-green-500"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="text-xl font-semibold text-sky-500">Connect with Readers</h2>
+                </div>
+                <div class="card-body">
+                    <p class="mb-4">Connect with like-minded readers and expand your network.</p>
+                    <div class="flex justify-center">
+                        <i class="fas fa-users text-5xl text-purple-500"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12">
+            <a href="/register" class="btn btn-primary text-lg px-8 py-3">Get Started</a>
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>
